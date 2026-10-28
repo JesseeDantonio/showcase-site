@@ -1,11 +1,11 @@
 import { Component, inject } from '@angular/core';
-import { LucideMoveUpRight } from '@lucide/angular';
+import { LucideMoveUpRight, LucideCircleDashed } from '@lucide/angular';
 import { AsyncPipe } from '@angular/common';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { map } from 'rxjs';
 
 @Component({
-  imports: [LucideMoveUpRight, AsyncPipe],
+  imports: [LucideMoveUpRight, AsyncPipe, LucideCircleDashed],
   selector: 'contact-component',
   styleUrl: './contact.component.scss',
   templateUrl: './contact.component.html',
