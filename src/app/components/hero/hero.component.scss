@@ -24,6 +24,12 @@
     margin-bottom: 1rem;
 }
 
+#hero-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .hero-description {
     color: #b8d2d6;
     margin-bottom: 2rem;

@@ -1,11 +1,10 @@
 @if (isCompact$ | async) {
 <section id="hero">
     <div id="hero-container-1">
-        <p class="hero-eyebrow">Développement sur mesure web & logiciel</p>
 
-        <h1 id="hero-title">
-            Des logiciels pensés pour <span style="color: #3ab3ab;">vos ambitions.</span>
-        </h1>
+        <p class="hero-eyebrow">Développement sur mesure web & logiciel</p>
+        <h1 id="hero-intro">Des logiciels pensés pour <span style="color: #3ab3ab;">vos ambitions.</span></h1>
+
 
         <p class="hero-description">
             Je conçois des applications web et des logiciels sur mesure pour simplifier votre activité, et je reprends
@@ -30,11 +29,12 @@
 } @else {
 <section id="hero">
     <div id="hero-container-1">
-        
-        <p class="hero-eyebrow">
+        <div id="hero-title">
             <svg lucideCircleDashed [size]="16" color="cyan" [strokeWidth]="2" title="Home"></svg>
-            Développement sur mesure web & logiciel
-        </p>
+            <p class="hero-eyebrow">
+                Développement sur mesure web & logiciel
+            </p>
+        </div>
 
         <h1 id="hero-intro">
             Des logiciels pensés pour <span style="color: #3ab3ab;">vos ambitions.</span>
