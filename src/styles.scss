@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@use "./variables.scss" as v;
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul > li > button > a {
+  text-decoration: none;
+}
+
+ul > li {
+    text-align: center;
+}
+
+a:link, a:visited, a:hover, a:focus, a:active {
+  color: inherit;
+  text-decoration: none; /* Optionnel : enlève aussi le soulignement */
+}
+
+.custom-button {
+    border-radius: 0.4rem;
+    border-width: 0;
+    padding: 1rem;
+    font-weight: bold; 
+    cursor: pointer;
+}
+
+.line {
+  border: none;               /* Supprime la bordure grise 3D par défaut */
+  height: 3px;                /* Définit l'épaisseur de la ligne */  /* Couleur de la ligne (gris clair) */         
+  width: 100%;  
+  margin: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.secondary-color {
+  color: v.$secondary-color;
+}

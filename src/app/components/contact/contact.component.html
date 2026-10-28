@@ -1,0 +1,54 @@
+@if (isCompact$ | async) {
+    <section id="contact">
+    <div>
+        <p id="contact-eyebrow" class="uppercase">Et votre projet ?</p>
+    </div>
+    <div id="contact-container">
+        <div>
+            <p class="contact-intro">
+                Une idée à construire ?
+            </p>
+            <p class="contact-intro">
+                Un outil à faire évoluer ?
+            </p>
+        </div>
+        <p id="contact-outro">
+            Commençons par en parler.
+        </p>
+        <button id="contact-cta" class="custom-button">
+            <a href="#">
+                Prendre contact <svg lucideMoveUpRight [size]="12" color="black" [strokeWidth]="2"
+                    title="Contact"></svg>
+            </a>
+        </button>
+    </div>
+</section>
+} @else {
+    <section id="contact">
+    <div>
+        <p id="contact-eyebrow" class="uppercase">Et votre projet ?</p>
+    </div>
+    <div id="contact-container">
+        <div>
+            <p class="contact-intro">
+                Une idée à construire ?
+            </p>
+            <p class="contact-intro">
+                Un outil à faire évoluer ?
+            </p>
+        </div>
+        <button id="contact-cta" class="custom-button">
+            <a href="#">
+                Prendre contact <svg lucideMoveUpRight [size]="12" color="black" [strokeWidth]="2"
+                    title="Contact"></svg>
+            </a>
+        </button>
+    </div>
+    <div>
+        <p id="contact-outro">
+            Commençons par en parler.
+        </p>
+    </div>
+</section>
+}
+

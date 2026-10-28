@@ -1,0 +1,103 @@
+@use "./../../../variables.scss" as v;
+
+#hero {
+    padding-top: 2rem;
+    background-color: #0c294b;
+    padding-left: 24rem;
+    padding-right: 24rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-eyebrow {
+    color: white;
+    text-transform: uppercase;
+}
+
+#hero-title {
+    color: white;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    color: #b8d2d6;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    width: 70%;
+}
+
+#hero-cta-primary {
+    background-color: #3ab3ab;
+    padding: 1rem;
+}
+
+#hero-cta-secondary {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+#hero-content {
+    padding-left: 24rem;
+}
+
+#hero-actions {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#hero-logo {
+    width: auto;
+    height: clamp(10rem, 20vw, 20rem);
+}
+
+@media (max-width: 1700px) {
+    #hero {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+}
+
+@media (max-width: v.$breakpoint-tablet) {
+    .hero-eyebrow {
+        margin-top: 0;
+    }
+
+    #hero {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: v.$breakpoint-mobile) {
+    #hero {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    #hero-actions {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero-cta-primary {
+        width: 100%;
+    }
+
+    .hero-description {
+        width: 100%;
+    }
+}

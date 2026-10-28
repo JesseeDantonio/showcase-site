@@ -1,0 +1,69 @@
+@if (isCompact$ | async) {
+<section id="hero">
+    <div id="hero-container-1">
+        <p class="hero-eyebrow">Développement sur mesure web & logiciel</p>
+
+        <h1 id="hero-title">
+            Des logiciels pensés pour <span style="color: #3ab3ab;">vos ambitions.</span>
+        </h1>
+
+        <p class="hero-description">
+            Je conçois des applications web et des logiciels sur mesure pour simplifier votre activité, et je reprends
+            vos outils existants pour les faire évoluer.
+        </p>
+
+        <div id="hero-actions">
+            <button id="hero-cta-primary" class="custom-button">
+                <a href="#">
+                    Discutons de votre projet
+                </a>
+            </button>
+
+            <button id="hero-cta-secondary">
+                <a href="#">
+                    Découvrir les expertises
+                </a>
+            </button>
+        </div>
+    </div>
+</section>
+} @else {
+<section id="hero">
+    <div id="hero-container-1">
+        
+        <p class="hero-eyebrow">
+            <svg lucideCircleDashed [size]="16" color="cyan" [strokeWidth]="2" title="Home"></svg>
+            Développement sur mesure web & logiciel
+        </p>
+
+        <h1 id="hero-title">
+            Des logiciels pensés pour <span style="color: #3ab3ab;">vos ambitions.</span>
+        </h1>
+
+        <p class="hero-description">
+            Je conçois des applications web et des logiciels sur mesure pour simplifier votre activité, et je reprends
+            vos outils existants pour les faire évoluer.
+        </p>
+
+        <div id="hero-actions">
+            <button id="hero-cta-primary" class="custom-button">
+                <a href="#">
+                    Discutons de votre projet <svg lucideMoveUpRight [size]="12" color="black" [strokeWidth]="2"
+                        title="Home"></svg>
+                </a>
+            </button>
+
+            <button id="hero-cta-secondary">
+                <a href="#">
+                    Découvrir les expertises <svg lucideMoveDown [size]="12" color="white" [strokeWidth]="2"
+                        title="Home"></svg>
+                </a>
+            </button>
+        </div>
+    </div>
+    <div id="hero-container-2">
+        <img id="hero-logo" src="images/symbole-fond-sombre.png" alt="Hero Image" />
+    </div>
+</section>
+
+}

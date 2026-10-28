@@ -1,0 +1,47 @@
+@use "./../../../variables.scss" as v;
+
+#services-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#services {
+    padding-left: 24rem;
+    padding-right: 24rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 1700px) {
+    #services-container {
+        justify-content: space-between;
+    }
+
+    #services {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+}
+
+@media (max-width: v.$breakpoint-tablet){
+    #services {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width: v.$breakpoint-mobile) {
+
+    #services {
+        padding: 1rem;
+    }
+
+    #services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-item {
+        font-size: 1.2rem;
+    }
+}
