@@ -12,6 +12,10 @@
     padding-bottom: 1rem;
 }
 
+.services-item p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
 @media (max-width: 1700px) {
     #services-container {
         justify-content: space-between;
@@ -23,7 +27,7 @@
     }
 }
 
-@media (max-width: v.$breakpoint-tablet){
+@media (max-width: v.$breakpoint-tablet) {
     #services {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -39,9 +43,5 @@
     #services-container {
         flex-direction: column;
         align-items: center;
-    }
-
-    .services-item {
-        font-size: 1.2rem;
     }
 }
