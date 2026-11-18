@@ -3,9 +3,10 @@ import { LucideMoveUpRight, LucideCircleDashed } from '@lucide/angular';
 import { AsyncPipe } from '@angular/common';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { map } from 'rxjs';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [LucideMoveUpRight, AsyncPipe, LucideCircleDashed],
+  imports: [LucideMoveUpRight, AsyncPipe, LucideCircleDashed, RouterLink],
   selector: 'contact-component',
   styleUrl: './contact.component.scss',
   templateUrl: './contact.component.html',
