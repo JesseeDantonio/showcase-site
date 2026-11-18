@@ -1,0 +1,173 @@
+@if (isCompact$ | async) {
+<section class="formcontact">
+    <div class="formcontact-container">
+
+        <h1 id="formcontact-intro">Un premier échange commence ici.</h1>
+        <p id="formcontact-subintro">Quelques mots suffisent pour commencer. <br>Les champs marqués d'un * sont
+            obligatoires.</p>
+
+        <form class="formcontact-card">
+
+                <div class="formcontact-group" style="width: 100%">
+                    <label for="name">Votre nom *</label>
+                    <input id="name" type="text" placeholder="Prénom et nom" required />
+                </div>
+                <div class="formcontact-group" style="width: 100%">
+                    <label for="email">Votre e-mail *</label>
+                    <input id="email" type="email" placeholder="vous@exemple.fr" required />
+                </div>
+
+            <div class="formcontact-group">
+                <label for="compagny">Entreprise</label>
+                <input id="compagny" type="text" placeholder="Nom de votre entreprise" />
+            </div>
+
+            <div class="formcontact-group">
+                <label for="subject">Votre besoin</label>
+                <input id="subject" type="text" placeholder="phSubject" required />
+            </div>
+
+            <div class="formcontact-group">
+                <label for="message">Votre projet *</label>
+                <textarea id="message" rows="5"
+                    placeholder="Votre idée, l'existant, les difficultés rencontrées... Et si vous avez une échéance, précisez-la."
+                    required></textarea>
+            </div>
+
+            <p class="formcontact-disclaimer">
+                Les informations transmises serviront à vous recontacter au sujet de votre demande.
+            </p>
+        </form>
+
+        <button id="formcontact-cta-primary" type="submit" class="custom-button">
+            <span>Envoyer le message</span>
+        </button>
+
+
+        <div class="formcontact-hero">
+            <p class="uppercase formcontact-hero-eyebrow">Et ensuite ?</p>
+            <h1 class="formcontact-hero-heading">Une approche simple, dès le premier contact.</h1>
+            <p class="formcontact-hero-subtitle">
+                Pas besoin d'un cahier des charges complet.<br>Commençons par ce que vous avez en tête.
+            </p>
+
+            <div id="formcontact-hero-container">
+                <ol id="formcontact-hero-list">
+                    <li class="formcontact-hero-item">
+                        <div class="formcontact-hero-item-content">
+                            <h3 class="formcontact-hero-item-title">Comprendre votre besoin</h3>
+                            <p class="formcontact-hero-item-description">Faire le point sur votre contexte et vos
+                                objectifs.</p>
+                        </div>
+                    </li>
+                    <li class="formcontact-hero-item">
+                        <div class="formcontact-hero-item-content">
+                            <h3 class="formcontact-hero-item-title">Préciser ensemble</h3>
+                            <p class="formcontact-hero-item-description">Echanger sur les usages, les contraintes et les
+                                priorités.</p>
+                        </div>
+                    </li>
+                    <li class="formcontact-hero-item">
+                        <div class="formcontact-hero-item-content">
+                            <h3 class="formcontact-hero-item-title">Définir la suite</h3>
+                            <p class="formcontact-hero-item-description">Identifier une solution et les prochaines
+                                étapes.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <hr class="line" style="background-color: #e2eaea;">
+
+            <p class="formcontact-hero-title">Votre projet est encore une idée ?</p>
+            <p>Vous pouvez aussi nous écrire pour explorer sa faisabilité et clarifier votre besoin.</p>
+        </div>
+    </div>
+</section>
+} @else {
+<section class="formcontact">
+    <div class="formcontact-container">
+
+        <h1 id="formcontact-intro">Un premier échange commence ici.</h1>
+        <p id="formcontact-subintro">Quelques mots suffisent pour commencer. <br>Les champs marqués d'un * sont
+            obligatoires.</p>
+
+        <form class="formcontact-card">
+
+            <div style="display: flex; gap: 1rem;">
+                <div class="formcontact-group" style="width: 100%">
+                    <label for="name">Votre nom *</label>
+                    <input id="name" type="text" placeholder="Prénom et nom" required />
+                </div>
+                <div class="formcontact-group" style="width: 100%">
+                    <label for="email">Votre e-mail *</label>
+                    <input id="email" type="email" placeholder="vous@exemple.fr" required />
+                </div>
+            </div>
+            <div class="formcontact-group">
+                <label for="compagny">Entreprise</label>
+                <input id="compagny" type="text" placeholder="Nom de votre entreprise" />
+            </div>
+
+            <div class="formcontact-group">
+                <label for="subject">Votre besoin</label>
+                <input id="subject" type="text" placeholder="phSubject" required />
+            </div>
+
+            <div class="formcontact-group">
+                <label for="message">Votre projet *</label>
+                <textarea id="message" rows="5"
+                    placeholder="Votre idée, l'existant, les difficultés rencontrées... Et si vous avez une échéance, précisez-la."
+                    required></textarea>
+            </div>
+
+            <p class="formcontact-disclaimer">
+                Les informations transmises serviront à vous recontacter au sujet de votre demande.
+            </p>
+        </form>
+
+        <div class="formcontact-hero">
+            <p class="uppercase formcontact-hero-eyebrow">Et ensuite ?</p>
+            <h1 class="formcontact-hero-heading">Une approche simple, dès le premier contact.</h1>
+            <p class="formcontact-hero-subtitle">
+                Pas besoin d'un cahier des charges complet.<br>Commençons par ce que vous avez en tête.
+            </p>
+
+            <div id="formcontact-hero-container">
+                <ol id="formcontact-hero-list">
+                    <li class="formcontact-hero-item">
+                        <div class="formcontact-hero-item-content">
+                            <h3 class="formcontact-hero-item-title">Comprendre votre besoin</h3>
+                            <p class="formcontact-hero-item-description">Faire le point sur votre contexte et vos
+                                objectifs.</p>
+                        </div>
+                    </li>
+                    <li class="formcontact-hero-item">
+                        <div class="formcontact-hero-item-content">
+                            <h3 class="formcontact-hero-item-title">Préciser ensemble</h3>
+                            <p class="formcontact-hero-item-description">Echanger sur les usages, les contraintes et les
+                                priorités.</p>
+                        </div>
+                    </li>
+                    <li class="formcontact-hero-item">
+                        <div class="formcontact-hero-item-content">
+                            <h3 class="formcontact-hero-item-title">Définir la suite</h3>
+                            <p class="formcontact-hero-item-description">Identifier une solution et les prochaines
+                                étapes.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <hr class="line" style="background-color: #e2eaea;">
+
+            <p class="formcontact-hero-title">Votre projet est encore une idée ?</p>
+            <p>Vous pouvez aussi nous écrire pour explorer sa faisabilité et clarifier votre besoin.</p>
+        </div>
+    </div>
+
+    <button id="formcontact-cta-primary" type="submit" class="custom-button">
+        <span>Envoyer le message</span>
+    </button>
+</section>
+}

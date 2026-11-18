@@ -1,0 +1,195 @@
+@use "./../../../variables.scss" as v;
+
+.formcontact {
+    padding-top: 2rem;
+    padding-left: 24rem;
+    padding-right: 24rem;
+    padding-bottom: 2rem;
+}
+
+.formcontact-container {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    row-gap: 0;
+    column-gap: 5rem;
+    margin-bottom: 1.2rem;
+}
+
+.formcontact-hero {
+    color: var(--text);
+    width: 100%;
+    background-color: #f2f6f6;
+    grid-row: -1 /4;
+    grid-column: 2;
+    border-radius: 0.8rem;
+    padding: 2rem;
+}
+
+.formcontact-disclaimer {
+    margin: 0;
+}
+
+#formcontact-intro {
+    font-weight: normal;
+    margin: 0;
+}
+
+.formcontact-hero-eyebrow {
+    font-size: clamp(0.6rem, 2.5vw, 1rem);
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.formcontact-hero-heading {
+    font-weight: normal;
+}
+
+.formcontact-hero-title {
+    font-weight: bold;
+}
+
+#formcontact-subintro {
+    grid-column: 1;
+}
+
+#formcontact-hero-list {
+    list-style: none;
+    /* Supprime la numérotation native et son point */
+    padding-top: 1rem;
+    padding-left: 0;
+    padding-bottom: 1rem;
+    margin: 0;
+    counter-reset: item;
+}
+
+.formcontact-hero-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#formcontact-hero-list li {
+    counter-increment: item;
+    gap: 0.5rem;
+
+    &::before {
+        content: "0" counter(item);
+        color: v.$secondary-color;
+        font-weight: bold;
+        min-width: 25px;
+    }
+}
+
+.formcontact-hero-item-title {
+    margin-top: 0;
+}
+
+.formcontact-hero-item-description {
+    margin: 0;
+}
+
+.formcontact-subtitle {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.formcontact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 600;
+}
+
+.formcontact-details a {
+    color: var(--primary);
+}
+
+.formcontact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    grid-column: 1;
+}
+
+.formcontact-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#formcontact-cta-primary {
+    background-color: #3ab3ab;
+}
+
+input,
+textarea {
+    border-radius: 0.4rem;
+    border: 1px solid #c4d2d9;
+    padding: 0.9rem 1.1rem;
+    font: inherit;
+    resize: none
+}
+
+input:focus,
+textarea:focus {
+    // border-color: var(--primary);
+    // box-shadow: 0 0 0 2px rgba(83, 106, 255, 0.2);
+    outline: none;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: progress;
+}
+
+
+@media (min-width: 1700px) {
+    .formcontact-container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        row-gap: 0rem;
+    }
+}
+
+@media (max-width: 1700px) {
+    .formcontact {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+
+    .formcontact-container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        row-gap: 0rem;
+    }
+}
+
+@media (max-width: v.$breakpoint-tablet) {
+    .formcontact {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .formcontact-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    #formcontact-subintro {
+        margin: 0;
+    }
+}
+
+@media (max-width: v.$breakpoint-mobile) {
+    .formcontact {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
