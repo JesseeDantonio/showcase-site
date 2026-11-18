@@ -11,7 +11,8 @@
 
 #nav-logo {
     width: auto;
-    height: clamp(3rem, 4vw, 4rem)
+    height: clamp(3rem, 4vw, 4rem);
+    cursor: pointer;
 }
 
 #nav-links ul {
@@ -22,6 +23,11 @@
     color: white;
     text-decoration: none;
     margin: 0;
+}
+
+#nav-cta-primary {
+    background-color: v.$secondary-color;
+    color: black;
 }
 
 #nav-links {

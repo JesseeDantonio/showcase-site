@@ -41,6 +41,7 @@ a:link, a:visited, a:hover, a:focus, a:active {
     font-weight: bold; 
     cursor: pointer;
     font-size: clamp(0.9rem, 2.5vw, 1rem);
+    text-align: center;
 }
 
 .line {

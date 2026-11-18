@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
-import { LucideCircleDashed, LucideGlobe, LucideMoveDown, LucideMoveUpRight } from '@lucide/angular';
+import { LucideCircleDashed, LucideMoveDown, LucideMoveUpRight } from '@lucide/angular';
 import { AsyncPipe } from '@angular/common';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { map } from 'rxjs';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [LucideMoveUpRight, LucideMoveDown, LucideCircleDashed ,AsyncPipe],
+  imports: [LucideMoveUpRight, LucideMoveDown, LucideCircleDashed ,AsyncPipe, RouterLink],
   selector: 'hero-component',
   styleUrl: './hero.component.scss',
   templateUrl: './hero.component.html',
