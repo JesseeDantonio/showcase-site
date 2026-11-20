@@ -1,0 +1,20 @@
+<button class="burger" (click)="toggleMenu()">
+    <span [class.open]="menuIsOpen"></span>
+    <span [class.open]="menuIsOpen"></span>
+    <span [class.open]="menuIsOpen"></span>
+</button>
+
+@if (menuIsOpen) {
+<!-- Arrière-plan semi-transparent -->
+<div animate.enter="overlay-enter" animate.leave="overlay-leave" class="overlay" (click)="closeMenu()"></div>
+
+
+<nav animate.enter="slide-enter" animate.leave="slide-leave" class="mobile-menu">
+    <button class="close-btn" (click)="closeMenu()">✖</button>
+    <ul>
+        <li><a routerLink="/" (click)="closeMenu()">Accueil</a></li>
+        <li><a routerLink="/contact" (click)="closeMenu()">Contact</a></li>
+    </ul>
+</nav>
+
+}
