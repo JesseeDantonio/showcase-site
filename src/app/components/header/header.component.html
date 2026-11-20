@@ -1,3 +1,15 @@
+@if (isCompact$ | async) {
+<header>
+    
+    <nav id="nav">
+        <div routerLink="/" id="nav-logo-container">
+            <img id="nav-logo" src="images/logo-fond-sombre.svg" alt="Nostanode Logo" />
+        </div>
+        <burger-component></burger-component>
+
+    </nav>
+</header>
+} @else {
 <header>
     <nav id="nav">
         <div routerLink="/" id="nav-logo-container">
@@ -20,3 +32,4 @@
         </div>
     </nav>
 </header>
+}
