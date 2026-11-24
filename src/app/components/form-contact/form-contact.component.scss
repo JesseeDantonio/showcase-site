@@ -148,6 +148,12 @@ button:disabled {
     cursor: progress;
 }
 
+.common-style-field {
+    height: 3.05rem;
+    font-size: inherit;
+    padding: 0.9rem 1.1rem;
+}
+
 
 @media (min-width: 1700px) {
     .formcontact-container {
